@@ -1,0 +1,24 @@
+API:
+  URL: "https://api.groq.com/openai/v1/chat/completions"
+  MODEL: "meta-llama/llama-4-scout-17b-16e-instruct"
+
+UI:
+  title: "🤖 Welcome to Mini Chatbot"
+  description: "Chat with an AI assistant powered by GroqAI"
+  placeholder: "Type your message here..."
+  height: 500
+  theme: "soft"
+  streaming_delay_seconds: 0.02
+
+ERRORS:
+  missing:
+    api_key: "Missing GROQ_API_KEY in .env file."
+    config_file: "Configuration file (config.yaml) not found."
+    api_url: "Missing API URL in configuration."
+    model: "Missing model in configuration."
+  request: "Request error: {error}"
+  parse: "Failed to parse API response."
+  connection: "Connection error: {error}"
+  rate_limit: "Rate limit exceeded. Please try again later."
+  server: "Server error: {status_code} - {message}"
+  not_found": "[Response parsing error] Could not find expected fields in the API response."
